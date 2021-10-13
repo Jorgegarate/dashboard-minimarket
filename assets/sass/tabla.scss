@@ -1,0 +1,51 @@
+.detalle {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:3rem;
+    margin-top: 2rem;
+    &__tabla {
+        padding: 2rem;
+        background-color: $color--blanco;
+        min-height: 50rem;
+        border-radius: 2rem;
+        box-shadow: 0 0.7rem 2.5rem rgba(0, 0, 0, 0.08);
+        display: grid;
+        
+    }
+}
+.cardheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+        font-weight: 600;
+        color:$color--azul;
+    }
+    .btn {
+        padding: 0.5rem 1rem;
+        background-color: $color--azul;
+        color:$color--blanco;
+        text-decoration: none;;
+        border-radius: 0.5rem;
+        &:hover {
+            background-color: $color--negro;
+            color: $color--blanco;
+        }
+
+    }
+}
+.detalles {
+    table{ 
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;  
+        thead {
+                td{
+                font-weight: 600;  
+                }
+        }
+    }
+}
