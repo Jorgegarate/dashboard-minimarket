@@ -37,15 +37,40 @@
 
     }
 }
-.detalles {
+.detalle {
     table{ 
         width: 100%;
         border-collapse: collapse;
-        margin-top: 10px;  
+        margin-top: 10px; 
+        tr {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+                &:last-child {
+                    border-bottom: none;
+                }
+                td {
+                    padding: 1rem;
+                    &:last-child {
+                        text-align: end;
+                    }
+                    &:nth-child(2) {
+                        text-align: end;
+                    }
+                    &:nth-child(3) {
+                        text-align: center;
+                    }
+                }
+            } 
         thead {
+            
                 td{
                 font-weight: 600;  
                 }
         }
+        tbody {
+            tr:hover {
+                background-color: $color--gris;
+            }
+        }
     }
+
 }
