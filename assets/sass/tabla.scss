@@ -1,12 +1,22 @@
+.scroll-table {
+    overflow-x:auto;
+    overflow-y:hidden;
+}
 .detalle {
     position: relative;
     width: 100%;
     padding: 2rem;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 4fr 1fr;
     grid-gap:3rem;
     margin-top: 2rem;
-
+    .personaslogin {
+        @media (max-width:800px) {
+            grid-column: 1/ span 3;
+            order: 1;
+            
+        }
+    }
     &__tabla {
         padding: 2rem;
         background-color: $color--blanco;
@@ -14,6 +24,22 @@
         border-radius: 2rem;
         box-shadow: 0 0.7rem 2.5rem rgba(0, 0, 0, 0.08);
         display: grid;
+        @media (max-width:800px) {
+            grid-column: 1/ span 3;
+            order: 2;
+            
+        }
+        .border-table {
+
+            width: 100%;
+            border-collapse: collapse;
+            tr {
+                width: 10rem;
+                
+            }
+
+            
+        }
         
     }
 }
@@ -49,7 +75,9 @@
                     border-bottom: none;
                 }
                 td {
-                    padding: 1rem;
+                    padding: 1rem 2.5rem 1rem 2.5rem;
+                    letter-spacing: normal;
+                    white-space: nowrap;
                     &:last-child {
                         text-align: end;
                     }
@@ -68,6 +96,11 @@
                 }
         }
         tbody {
+            tr {
+                td {
+                    color:$color--gristable;
+                }
+            }
             tr:hover {
                 background-color: $color--gris;
             }

@@ -212,7 +212,7 @@ body {
 }
 .buscador label ion-icon {
   position: absolute;
-  top: 0;
+  top: 0.4rem;
   left: 1rem;
   font-size: 1.2rem;
 }
@@ -255,6 +255,11 @@ body {
 @media (max-width: 940px) {
   .cardbox {
     grid-template-columns: repeat(2, 2fr);
+  }
+}
+@media (max-width: 440px) {
+  .cardbox {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .cardbox .card {
@@ -326,14 +331,25 @@ body {
   }
 }
 
+.scroll-table {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 .detalle {
   position: relative;
   width: 100%;
   padding: 2rem;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-gap: 3rem;
   margin-top: 2rem;
+}
+@media (max-width: 800px) {
+  .detalle .personaslogin {
+    grid-column: 1/span 3;
+    order: 1;
+  }
 }
 .detalle__tabla {
   padding: 2rem;
@@ -342,6 +358,19 @@ body {
   border-radius: 2rem;
   box-shadow: 0 0.7rem 2.5rem rgba(0, 0, 0, 0.08);
   display: grid;
+}
+@media (max-width: 800px) {
+  .detalle__tabla {
+    grid-column: 1/span 3;
+    order: 2;
+  }
+}
+.detalle__tabla .border-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.detalle__tabla .border-table tr {
+  width: 10rem;
 }
 
 .cardheader {
@@ -377,7 +406,9 @@ body {
   border-bottom: none;
 }
 .detalle__tabla table tr td {
-  padding: 1rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  letter-spacing: normal;
+  white-space: nowrap;
 }
 .detalle__tabla table tr td:last-child {
   text-align: end;
@@ -390,6 +421,9 @@ body {
 }
 .detalle__tabla table thead td {
   font-weight: 600;
+}
+.detalle__tabla table tbody tr td {
+  color: #515365;
 }
 .detalle__tabla table tbody tr:hover {
   background-color: #f5f5f5;
