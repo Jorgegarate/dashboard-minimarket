@@ -5,7 +5,7 @@
 .detalle {
     position: relative;
     width: 100%;
-    padding: 2rem;
+    padding: 2.5rem;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-gap:3rem;
@@ -68,7 +68,7 @@
     table{ 
         width: 100%;
         border-collapse: collapse;
-        margin-top: 10px; 
+        margin-top: 10px;
         tr {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.08);
                 &:last-child {
@@ -156,7 +156,11 @@
     }
     table {
         tr{
+            margin: 0; 
+        td    {
             margin: 0;
+            border:none;
+            }
         }
         tr:hover {
         background-color: $color--azul;
@@ -164,4 +168,12 @@
         }
     }
 
+}
+.img-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 100%;
+    width: 200px;
 }

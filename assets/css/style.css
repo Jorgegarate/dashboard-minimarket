@@ -339,7 +339,7 @@ body {
 .detalle {
   position: relative;
   width: 100%;
-  padding: 2rem;
+  padding: 2.5rem;
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-gap: 3rem;
@@ -478,9 +478,21 @@ body {
 .personaslogin table tr {
   margin: 0;
 }
+.personaslogin table tr td {
+  margin: 0;
+  border: none;
+}
 .personaslogin table tr:hover {
   background-color: #00234C;
   color: #fff;
+}
+
+.img-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
