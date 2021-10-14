@@ -6,6 +6,7 @@
     grid-template-columns: 2fr 1fr;
     grid-gap:3rem;
     margin-top: 2rem;
+
     &__tabla {
         padding: 2rem;
         background-color: $color--blanco;
@@ -110,7 +111,7 @@
        border-radius: 50%;
        overflow: hidden;
        img {
-           position: absolute;
+           position:absolute;
            top:0;
            left:0;
            right: -2rem;

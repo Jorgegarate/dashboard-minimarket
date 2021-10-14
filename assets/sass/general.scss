@@ -8,7 +8,6 @@ html {
 }
 body {
     min-height: 100vh;
-    overflow: hidden;
     font-size: 1.5rem;
 }
 .title {
@@ -138,4 +137,7 @@ overflow:hidden;
 }
 .navegacion.active {
     width: 8rem;  
+  }
+  .border-table tbody {
+      overflow: scroll;
   }
