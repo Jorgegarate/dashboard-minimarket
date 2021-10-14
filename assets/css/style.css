@@ -475,6 +475,9 @@ body {
   height: 100%;
   overflow: cover;
 }
+.personaslogin table {
+  border-collapse: collapse;
+}
 .personaslogin table tr {
   margin: 0;
 }
@@ -493,6 +496,25 @@ body {
   align-items: center;
   height: 100%;
   width: 200px;
+}
+
+.hola {
+  border: 1px solid black;
+  display: flex;
+}
+.hola__este {
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+}
+.hola__este h4 {
+  color: cadetblue;
+  font-size: 30rem;
+}
+.hola__hoy {
+  width: 10rem;
+  height: 10rem;
+  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */
