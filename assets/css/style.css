@@ -26,8 +26,8 @@ body {
   position: fixed;
   width: 30rem;
   height: 100%;
-  background-color: #00234C;
-  border-left: 1rem solid #00234C;
+  background-color: #EB5019;
+  border-left: 1rem solid #EB5019;
   transition: 0.5s;
   overflow: hidden;
 }
@@ -46,11 +46,17 @@ body {
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
 }
+.navegacion li svg {
+  fill: #fff;
+}
 .navegacion li:hover {
   background-color: #fff;
 }
 .navegacion li:hover a {
-  color: #00234C;
+  color: #EB5019;
+}
+.navegacion li:hover a span svg {
+  fill: #EB5019;
 }
 .navegacion li:hover a::before {
   content: "";
@@ -80,7 +86,7 @@ body {
   background-color: #fff;
 }
 .navegacion li .hovered a {
-  color: #00234C;
+  color: #EB5019;
 }
 .navegacion li .hovered a::before {
   content: "";
@@ -201,7 +207,7 @@ body {
   padding-left: 3rem;
   font-size: 1rem;
   outline: none;
-  border: 1px solid #00234C;
+  border: 1px solid #EB5019;
   background-color: #fff;
 }
 @media (max-width: 920px) {
@@ -270,10 +276,10 @@ body {
   justify-content: space-between;
   cursor: pointer;
   box-shadow: 0 0.7rem 2.5rem rgba(0, 0, 0, 0.08);
-  color: #00234C;
+  color: #EB5019;
 }
 .cardbox .card:hover {
-  background-color: #00234C;
+  background-color: #EB5019;
   color: #fff;
 }
 .cardbox .card:hover .icon, .cardbox .card:hover .card__nombre, .cardbox .card:hover .card__numeros {
@@ -379,11 +385,11 @@ body {
 }
 .cardheader h2 {
   font-weight: 600;
-  color: #00234C;
+  color: #EB5019;
 }
 .cardheader .btn {
   padding: 0.5rem 1rem;
-  background-color: #00234C;
+  background-color: #EB5019;
   color: #fff;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -430,7 +436,7 @@ body {
 
 .estado {
   padding: 0.3rem 0.6rem;
-  background-color: #00234C;
+  background-color: #EB5019;
   color: #fff;
   border-radius: 0.4rem;
   font-size: 1.4rem;
@@ -496,7 +502,7 @@ body {
   color: #999;
 }
 .personaslogin table tr:hover {
-  background-color: #00234C;
+  background-color: #EB5019;
   color: #fff;
 }
 .personaslogin table tr:hover td h4 {

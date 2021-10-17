@@ -41,9 +41,17 @@ overflow:hidden;
         list-style:none;
         border-top-left-radius:3rem;
         border-bottom-left-radius: 3rem;
+        svg {
+            fill:$color--blanco;
+        }
         &:hover {
             background-color: $color--blanco;
             a {
+                span {
+                    svg {
+                        fill:$color--azul;
+                    }
+                }
                 color:$color--azul;
                 &::before {
                 content:'';
@@ -56,7 +64,8 @@ overflow:hidden;
                 border-radius: 50%;
                 box-shadow: 3.5rem 3.5rem 0 1rem $color--blanco;
                 pointer-events:none;
-                }
+                
+            }
                 &::after {
                     content:'';
                     position:absolute;
