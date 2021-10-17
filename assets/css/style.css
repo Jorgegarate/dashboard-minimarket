@@ -26,8 +26,8 @@ body {
   position: fixed;
   width: 30rem;
   height: 100%;
-  background-color: #EB5019;
-  border-left: 1rem solid #EB5019;
+  background-color: #00234C;
+  border-left: 1rem solid #00234C;
   transition: 0.5s;
   overflow: hidden;
 }
@@ -53,7 +53,7 @@ body {
   background-color: #fff;
 }
 .navegacion li:hover a {
-  color: #EB5019;
+  color: #00234C;
 }
 .navegacion li:hover a span svg {
   fill: #EB5019;
@@ -86,7 +86,7 @@ body {
   background-color: #fff;
 }
 .navegacion li .hovered a {
-  color: #EB5019;
+  color: #00234C;
 }
 .navegacion li .hovered a::before {
   content: "";
@@ -207,7 +207,7 @@ body {
   padding-left: 3rem;
   font-size: 1rem;
   outline: none;
-  border: 1px solid #EB5019;
+  border: 1px solid #00234C;
   background-color: #fff;
 }
 @media (max-width: 920px) {
@@ -251,6 +251,27 @@ body {
   cursor: pointer;
 }
 
+/*elemento flotante notificacion*/
+.float-iconsposition {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  padding: 0.2rem 0.3rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: 9px;
+  border-radius: 50%;
+  font-weight: 800;
+}
+.float-iconsposition.alert-campana {
+  background-color: #f00;
+  color: #fff;
+}
+.float-iconsposition.alert-mensaje {
+  background-color: #FFD100;
+  color: #222;
+}
+
 .cardbox {
   width: 100%;
   padding: 2.5rem;
@@ -276,10 +297,10 @@ body {
   justify-content: space-between;
   cursor: pointer;
   box-shadow: 0 0.7rem 2.5rem rgba(0, 0, 0, 0.08);
-  color: #EB5019;
+  color: #00234C;
 }
 .cardbox .card:hover {
-  background-color: #EB5019;
+  background-color: #00234C;
   color: #fff;
 }
 .cardbox .card:hover .icon, .cardbox .card:hover .card__nombre, .cardbox .card:hover .card__numeros {
@@ -385,11 +406,11 @@ body {
 }
 .cardheader h2 {
   font-weight: 600;
-  color: #EB5019;
+  color: #00234C;
 }
 .cardheader .btn {
   padding: 0.5rem 1rem;
-  background-color: #EB5019;
+  background-color: #00234C;
   color: #fff;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -436,7 +457,7 @@ body {
 
 .estado {
   padding: 0.3rem 0.6rem;
-  background-color: #EB5019;
+  background-color: #00234C;
   color: #fff;
   border-radius: 0.4rem;
   font-size: 1.4rem;
@@ -502,7 +523,7 @@ body {
   color: #999;
 }
 .personaslogin table tr:hover {
-  background-color: #EB5019;
+  background-color: #00234C;
   color: #fff;
 }
 .personaslogin table tr:hover td h4 {
