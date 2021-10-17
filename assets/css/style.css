@@ -343,7 +343,6 @@ body {
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-gap: 3rem;
-  margin-top: 2rem;
 }
 @media (max-width: 800px) {
   .detalle .personaslogin {
@@ -478,15 +477,32 @@ body {
 .personaslogin table {
   border-collapse: collapse;
 }
+.personaslogin table .imperfil {
+  padding-left: 1rem;
+}
 .personaslogin table tr {
   margin: 0;
 }
 .personaslogin table tr td {
-  margin: 0;
   border: none;
+}
+.personaslogin table tr td h4 {
+  font-weight: 800;
+  color: #222;
+  margin-left: 2rem;
+}
+.personaslogin table tr td h4 span {
+  font-weight: 400;
+  color: #999;
 }
 .personaslogin table tr:hover {
   background-color: #00234C;
+  color: #fff;
+}
+.personaslogin table tr:hover td h4 {
+  color: #fff;
+}
+.personaslogin table tr:hover td h4 span {
   color: #fff;
 }
 
@@ -496,25 +512,6 @@ body {
   align-items: center;
   height: 100%;
   width: 200px;
-}
-
-.hola {
-  border: 1px solid black;
-  display: flex;
-}
-.hola__este {
-  width: 10rem;
-  height: 10rem;
-  background-color: red;
-}
-.hola__este h4 {
-  color: cadetblue;
-  font-size: 30rem;
-}
-.hola__hoy {
-  width: 10rem;
-  height: 10rem;
-  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */

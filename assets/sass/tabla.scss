@@ -9,7 +9,6 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-gap:3rem;
-    margin-top: 2rem;
     .personaslogin {
         @media (max-width:800px) {
             grid-column: 1/ span 3;
@@ -156,16 +155,37 @@
     }
     table {
         border-collapse: collapse;
+        .imperfil {
+
+                padding-left: 1rem;
+
+        }
         tr{
             margin: 0; 
-        td    {
-            margin: 0;
+        td {
             border:none;
+            h4 {
+                font-weight: 800;
+                color: $color--negro;
+                margin-left: 2rem;
+                span {
+                    font-weight: 400;
+                    color: $colo--negro2;
+                }
+            }
             }
         }
         tr:hover {
         background-color: $color--azul;
         color: $color--blanco;
+        td {
+            h4 {
+                color: $color--blanco;
+            span {
+                color:$color--blanco;
+            }
+            }
+        }
         }
     }
 
@@ -174,7 +194,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     height: 100%;
     width: 200px;
 }
